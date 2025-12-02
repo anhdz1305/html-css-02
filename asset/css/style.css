@@ -30,6 +30,15 @@ a {
     text-align: center;
     color: #ffffff;
 }
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
 :root {
     --primary-color: #ffb900;
 }
@@ -209,7 +218,7 @@ a {
     margin-left: 28px;
 }
 .popular {
-    margin-top: 200px;
+    padding: 200px;
 }
 .popular .content {
     display: flex;
@@ -256,17 +265,17 @@ a {
     display: flex;
     gap: 30px;
 }
-.list-info .info {
+.popular .list-info .info {
     flex: 1;
     max-width: 370px;
     border-radius: 12px;
     border: 1px solid #e2dfda;
 }
-.list-info .info:hover {
+.popular .list-info .info:hover {
     border-color: transparent;
     box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
 }
-.list-info .info .img-info {
+.popular .list-info .info .img-info {
     width: calc(100% + 2px);
     height: 278px;
     object-fit: cover;
@@ -274,49 +283,111 @@ a {
     border-radius: 12px 12px 0 0;
 }
 
-.list-info .info .text-info {
+.popular .list-info .info .text-info {
     padding: 16px 22px 22px;
 }
-.list-info .info .text-info .name-info {
+.popular .list-info .info .text-info .name-info {
     display: flex;
     justify-content: space-between;
 }
-.list-info .info .text-info .name-info .title a {
+.popular .list-info .info .text-info .name-info .title a {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 3rem; /* 166.667% */
 }
-.list-info .evaluate {
+.popular .list-info .eval {
     display: flex;
     align-items: center;
+    gap: 6px;
 }
-.list-info .evaluate p {
-    margin-left: 6px;
+.popular .list-info .eval p {
     color: var(--primary-color);
 }
-.list-info .info .text-info .desc {
+.popular .list-info .info .text-info .desc {
     color: #5f5b53;
     font-size: 1.4rem;
     line-height: 2.6rem;
 }
-.list-info .info .text-info .price-info {
+.popular .list-info .info .text-info .price-info {
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.list-info .info .text-info .price-info .price {
+.popular .list-info .info .text-info .price-info .price {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
 }
-.list-info .info .text-info .price-info .price-btn {
+.popular .list-info .info .text-info .price-info .price-btn {
     border-radius: 25px;
     background: #171100;
     max-width: 118px;
 }
 
-.list-info .info .text-info .price-info .price-btn:hover {
+.popular .list-info .info .text-info .price-info .price-btn:hover {
     background: var(--primary-color);
+}
+.popular .list-info .info .text-info .price-info .price-btn.active {
+    background: var(--primary-color);
+}
+.feedback {
+    background: #2e2100;
+}
+.feedback .content {
+    padding: 96px 0;
+    display: flex;
+    justify-content: space-between;
+    background: #2e2100;
+}
+.feedback .content .profile img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback .content .profile .user-name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+}
+.feedback .content .profile .job {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+}
+.feedback .content .desc {
+    position: relative;
+}
+.feedback .content .desc .desc-text {
+    max-width: 740px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.feedback .content .desc .desc-img {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+}
+.feedback .dots {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+
+.feedback .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+.feedback .dot.active {
+    background: #ffb900;
 }
