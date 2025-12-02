@@ -30,6 +30,9 @@ a {
     text-align: center;
     color: #ffffff;
 }
+.btn:hover {
+    opacity: 0.8;
+}
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
@@ -93,6 +96,8 @@ a {
     background: #171100;
     padding: 14px;
 }
+
+/* hero */
 .hero {
     padding-top: 65px;
     background: #fffcf4;
@@ -217,6 +222,8 @@ a {
 .text-hero .infor1 {
     margin-left: 28px;
 }
+
+/* popular */
 .popular {
     padding: 200px;
 }
@@ -332,6 +339,7 @@ a {
 .popular .list-info .info .text-info .price-info .price-btn.active {
     background: var(--primary-color);
 }
+/* feedback */
 .feedback {
     background: #2e2100;
 }
@@ -389,5 +397,161 @@ a {
     background: #634700;
 }
 .feedback .dot.active {
+    background: #ffb900;
+}
+
+/* features */
+.features {
+    padding: 200px;
+}
+.features .content-01 {
+    display: flex;
+    justify-content: space-between;
+}
+.features .content-01 .features-img {
+    display: flex;
+    gap: 30px;
+}
+.features .content-01 .features-img img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.features .content-01 .features-img .img-01 {
+    margin-top: 34px;
+}
+.features .content-01 .features-info {
+    max-width: 470px;
+}
+.features .h2-info {
+    margin-top: 58px;
+    color: #171100;
+
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem; /* 126.316% */
+    letter-spacing: -0.076rem;
+}
+.features .desc-info {
+    margin-top: 16px;
+    color: #5f5b53;
+    line-height: 2.8rem; /* 175% */
+}
+.features .desc-info-02 {
+    margin-top: 16px;
+    color: #5f5b53;
+    line-height: 2.8rem; /* 175% */
+}
+.features .btn {
+    margin-top: 32px;
+    max-width: 137px;
+    background: #ffb900;
+}
+.features .content-02 {
+    margin-top: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+.features .content-02 .features-img img {
+    width: 470px;
+    height: 440px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.features .content-02 .features-info {
+    max-width: 570px;
+}
+.features .content-02 .h2-info {
+    margin-top: 71px;
+}
+.blog {
+    background: #fffcf4;
+}
+.blog .content {
+    padding: 96px;
+}
+
+.blog .content .title {
+    text-align: center;
+    color: #130606;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem; /* 126.316% */
+    letter-spacing: -0.076rem;
+}
+.blog .content .desc {
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    text-align: center;
+    color: #696262;
+    line-height: 2.8rem; /* 175% */
+}
+.blog .content .list-card {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.blog .content .list-card .card {
+    max-width: 370px;
+    border-radius: 16px;
+}
+.blog .content .list-card .card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blog .list-card .card .img-card {
+    border-radius: 16px 16px 0 0;
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+}
+.blog .list-card .card .info-card {
+    padding: 20px 20px 28px;
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+}
+.blog .list-card .card .info-card .time-card {
+    display: flex;
+    align-items: center;
+}
+.blog .card .info-card .time-card .time {
+    color: #5f5b53;
+    font-size: 1.4rem;
+}
+.blog .card .info-card .time-card .dot {
+    margin-right: 4px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+.blog .list-card .card .info-card .bar {
+    margin-top: 12px;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+}
+
+.blog .list-card .card .info-card .title-card {
+    margin-top: 12px;
+    color: #171100;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+.blog .list-card .card .info-card .btn {
+    margin-top: 12px;
+    max-width: 118px;
+    background: #171100;
+}
+.blog .list-card .card .info-card .btn:hover {
     background: #ffb900;
 }
