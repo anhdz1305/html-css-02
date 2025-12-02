@@ -42,6 +42,22 @@ a {
 .line-clamp.line-2 {
     --line-clamp: 2;
 }
+.dots {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+
+.dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+.dot.active {
+    background: #ffb900;
+}
+
 :root {
     --primary-color: #ffb900;
 }
@@ -384,21 +400,6 @@ a {
     top: -20px;
     left: -30px;
 }
-.feedback .dots {
-    display: flex;
-    margin-top: 28px;
-    gap: 6px;
-}
-
-.feedback .dots .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #634700;
-}
-.feedback .dot.active {
-    background: #ffb900;
-}
 
 /* features */
 .features {
@@ -470,7 +471,7 @@ a {
     background: #fffcf4;
 }
 .blog .content {
-    padding: 96px;
+    padding: 96px 0;
 }
 
 .blog .content .title {
@@ -554,4 +555,79 @@ a {
 }
 .blog .list-card .card .info-card .btn:hover {
     background: #ffb900;
+}
+.blog .content .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background: #2e2100;
+}
+
+.footer .main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .content {
+    padding: 96px 0 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .content .logo .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+.footer .content .logo .social {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.footer .content .info .title {
+    color: #fff;
+    font-weight: 600;
+}
+.footer .content .bar {
+    margin-top: 14px;
+    content: "";
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+.footer .content .info-desc {
+    margin-top: 16px;
+}
+.footer .content .info-desc .desc a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+.footer .content .info-desc .desc a:first-child {
+    max-width: 231px;
+}
+.footer .content .info-desc .desc a .outstanding {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer .copyright-footer .big-bar {
+    margin-top: 38px;
+    content: "";
+    max-width: 1170px;
+    height: 1px;
+    background: #59554b;
+}
+.footer .copyright-footer .copyright {
+    padding: 28px 0px;
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
 }
